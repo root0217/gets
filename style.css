@@ -1,0 +1,61 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(to right, #ffe6f0, #ffd6ec);
+  text-align: center;
+  color: #ff4081;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container {
+  padding: 0;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.slider {
+  position: relative;
+  width: 90vw;
+  max-width: 600px;
+  height: 80vh;
+  margin: 0 auto 20px auto;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(255, 64, 129, 0.4);
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 100%;
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.slide.active {
+  left: 0;
+  opacity: 1;
+}
+
+#playBtn {
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(255, 64, 129, 0.5);
+}
